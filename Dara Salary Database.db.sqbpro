@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/mnmul/Documents/Dara Salary Database.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="200"/><column_width id="3" width="1492"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="SES"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="SES" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort><column index="6" mode="0"/></sort><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table><table schema="main" name="Sales Enablement Salary" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort><column index="2" mode="0"/></sort><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings></tab_browse><tab_sql><sql name="Instructional Designer">SELECT COUNT(Role)
+FROM SES
+WHERE Role = 'Instructional Designer';
+</sql><sql name="Average Salary Los Angeles">SELECT AVG(Average_Salary)
+FROM SES
+WHERE location = 'Los Angeles';
+</sql><sql name="Average Salary New York">SELECT AVG(Average_Salary)
+FROM SES
+WHERE Location = 'New York City';</sql><sql name="Average Salary San Francisco">SELECT AVG(Average_Salary)
+FROM SES
+WHERE Location = 'San Francisco';</sql><sql name="Average Salary By Tech as Industry">SELECT AVG(Average_Salary)
+FROM SES
+WHERE Industry = 'Tech';
+</sql><sql name="Salary by Location and Tech as Industry">SELECT Location, AVG(Average_Salary), Industry
+FROM SES
+WHERE location = 'Los Angeles' AND Industry = 'Tech'
+</sql><current_tab id="5"/></tab_sql></sqlb_project>
